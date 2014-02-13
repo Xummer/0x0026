@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "CaculateViewController.h"
 
 @implementation AppDelegate
 
@@ -15,6 +16,9 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    CaculateViewController *cVC = [[CaculateViewController alloc] init];
+    [self.window setRootViewController:cVC];
     [self.window makeKeyAndVisible];
     return YES;
 }
